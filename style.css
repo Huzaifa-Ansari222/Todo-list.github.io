@@ -66,7 +66,9 @@ button{
 
 }
 button:hover{
-    background-color: rgba(36, 226, 68, 0.715);    transition: 0.3s ease-in-out;
+    border: 1px solid rgb(0, 181, 15);
+    background-color: rgba(80, 226, 104, 0.995);
+    transition: 0.3s ease-in-out;
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -106,9 +108,9 @@ span{
 }
 span:hover{
     /* background-color: rgb(255, 73, 73); */
-    border: 1px solid rgba(41, 41, 41, 0.144);
-    background-color: rgba(255, 0, 0, 0.547);    transition: 0.3s ease-in-out;
-
+    border: 1px solid rgba(255, 0, 0, 0.567);
+    background-color: rgba(255, 0, 0, 0.547);   
+    transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     color: rgb(255, 255, 255);
 
