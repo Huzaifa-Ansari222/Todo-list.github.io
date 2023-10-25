@@ -140,7 +140,7 @@ height: inherit;
     color: rgb(255, 255, 255);
 }
 #list-container{
-    max-height: 450px; /* Set the maximum height for the list container */
+    max-height: 410px; /* Set the maximum height for the list container */
     overflow-y: auto;
 
 }
