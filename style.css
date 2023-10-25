@@ -40,6 +40,7 @@ input{
     padding-left: 20px;
     padding-right: 20px;
     border-style: none;
+    margin-left: 20px;
     background-color: rgba(200, 200, 200, 0);
 }
 input:focus {
@@ -51,22 +52,30 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: rgb(26, 27, 44);
     
     
 }
 button{
     height: 100%;
     width:80px;
-    background-color: rgba(122, 201, 247, 0);
+    /* background-color: rgba(122, 201, 247, 0); */
     border-radius: 130px;
-    border: 1px solid rgba(41, 41, 41, 0.314);
-    font-size: 30px;
-    color: rgb(148, 148, 148);
-    background-color: rgba(0, 255, 42, 0.167);    transition: 0.3s ease-in-out;
+    /* border: 1px solid rgba(41, 41, 41, 0.314); */
+    border: 2px solid rgba(0, 0, 0, 0.21);
 
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.325);
+    /* background-color: rgba(0, 255, 42, 0.167);    */
+    background-color: rgba(255, 255, 255, 0.482);
 }
 button:hover{
-    background-color: rgba(36, 226, 68, 0.715);    transition: 0.3s ease-in-out;
+    /* border: 1px solid rgb(0, 181, 15); */
+    border: 0px solid rgba(255, 255, 255, 0.475);
+    background-color: rgb(246, 135, 0);    
+
+    /* background-color: rgba(80, 226, 104, 0.995);*/
+    transition: 0.3s ease-in-out;
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -83,36 +92,56 @@ li{
     border-radius: 130px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: rgb(29, 30, 46);
 }
 
 
 span{
-    /* width: 40px; */
-    /* text-align: center; */
+
     font-size: 25px;
-    width: 45px;
+    width: 42px;
     height: 100%;
-    color: rgba(86, 86, 86, 0.737);
+    color: rgb(86, 86, 86);
     display: flex;
     justify-content: center; 
-    align-items: center; 
-    /* border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px; */
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: rgba(255, 198, 198, 0);
+    align-items: center;     
     cursor: pointer;
 
 }
-span:hover{
+#remove{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(107, 110, 148, 0.158);
+    border: 1px solid rgba(0, 0, 0, 0.108);
+
+}
+#remove:hover{
     /* background-color: rgb(255, 73, 73); */
-    border: 1px solid rgba(41, 41, 41, 0.144);
-    background-color: rgba(255, 0, 0, 0.547);    transition: 0.3s ease-in-out;
-
+    /* border: 1px solid rgba(255, 0, 0, 0.567); */
+    /* background-color: rgba(255, 0, 0, 0.547);    transition: 0.3s ease-in-out; */
     transition: 0.3s ease-in-out;
+    background-color: rgb(50, 52, 81);
+
+    
     color: rgb(255, 255, 255);
-
-
+}
+.span-div{
+display: flex;
+height: inherit;
+}
+#edit{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(107, 110, 148, 0.158);
+    border: 1px solid rgba(0, 0, 0, 0.108);
+    font-size: 18px;
+}
+#edit:hover{
+    border: 1px solid rgba(0, 8, 255, 0.567);
+    /* background-color: rgb(61, 61, 61); */
+    background-color: rgb(50, 52, 81);
+    transition: 0.5s ease-in-out;
+    color: rgb(255, 255, 255);
 }
 #list-container{
     max-height: 450px; /* Set the maximum height for the list container */
@@ -142,7 +171,7 @@ span:hover{
 @media  (max-width: 768px) {
     .todo-app {
     width: 100%;
-    }
+}
     .container{
     padding-left: 3%;
     padding-right: 3%;
