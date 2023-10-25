@@ -34,7 +34,7 @@ button.addEventListener('click',function addTask(){
 
         // Append the parent div to the <li> element
         li.appendChild(spanDiv);      
-        listContainer.appendChild(li); // Append the <li> element to the list container
+        listContainer.prepend(li); // Append the <li> element to the list container
     }
 
     inputBox.value="";
