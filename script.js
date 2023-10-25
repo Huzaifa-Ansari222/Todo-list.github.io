@@ -38,7 +38,7 @@ button.addEventListener('click',function addTask(){
     }
 
     inputBox.value="";
-    saveData();
+    //saveData();
 })
 
 listContainer.addEventListener('click',function(e){
@@ -47,7 +47,7 @@ listContainer.addEventListener('click',function(e){
     if(e.target.id==='remove'){//e target-->span
         grandparent.remove();//span parent-->li
     }
-    saveData();
+    //saveData();
 })
 
 
@@ -65,16 +65,16 @@ listContainer.addEventListener('click', function (e) {
             return; // Do not update if the text is empty
         }
         li.firstChild.textContent = updatedText;
-        // prompt="";
-        saveData();
+
+       // saveData();
     }
 });
 
 
-function saveData(){
+/*function saveData(){
     localStorage.setItem("data",listContainer.innerHTML)//store li data
 }
 function showData(){
     listContainer.innerHTML=localStorage.getItem("data");
-}
+}*/
 //showData();
