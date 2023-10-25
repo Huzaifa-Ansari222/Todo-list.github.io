@@ -111,15 +111,13 @@ span{
 #remove{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgba(107, 110, 148, 0.158);
-    border: 1px solid rgba(0, 0, 0, 0.108);
-
+    background-color: rgba(44, 44, 44, 0.252);
+    /* border: 1px solid rgba(0, 0, 0, 0.108); */
 }
 #remove:hover{
     /* background-color: rgb(255, 73, 73); */
-    border: 1px solid rgba(41, 41, 41, 0.144);
-    background-color: rgba(255, 0, 0, 0.547);    transition: 0.3s ease-in-out;
-
+    /* border: 1px solid rgba(41, 41, 41, 0.144); */
+    background-color: rgba(255, 0, 0, 0.547);
     transition: 0.3s ease-in-out;
     background-color: rgb(50, 52, 81);
 
@@ -131,14 +129,14 @@ display: flex;
 height: inherit;
 }
 #edit{
-    border-top-left-radius: 20px;
+      border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgba(107, 110, 148, 0.158);
-    border: 1px solid rgba(0, 0, 0, 0.108);
+    background-color: rgba(44, 44, 44, 0.252);
+    /* border: 1px solid rgba(0, 0, 0, 0.108); */
     font-size: 18px;
 }
 #edit:hover{
-    border: 1px solid rgba(41, 41, 41, 0.144);
+   /* border: 1px solid rgba(41, 41, 41, 0.144); */
     /* background-color: rgb(61, 61, 61); */
     background-color: rgb(50, 52, 81);
     transition: 0.5s ease-in-out;
