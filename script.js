@@ -56,7 +56,7 @@ listContainer.addEventListener('click', function (e) {
 
     if (e.target.id === 'edit') {
         const li = e.target.parentNode.parentNode;
-        const updatedText = prompt("Enter the updated text", li.firstChild.textContent);
+        const updatedText = prompt("Edit your work", li.firstChild.textContent);
         if (updatedText === null) {
             return; // User canceled the prompt, do nothing
         }
