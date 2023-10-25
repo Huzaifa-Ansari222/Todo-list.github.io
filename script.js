@@ -77,4 +77,6 @@ function saveData(){
 function showData(){
     listContainer.innerHTML=localStorage.getItem("data");
 }
+localStorage.clear();
+listContainer.innerHTML = '';
 showData();
