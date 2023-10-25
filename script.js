@@ -20,7 +20,7 @@ button.addEventListener('click',function addTask(){
         let editSpan = document.createElement('span');
         editSpan.className = 'span';
         editSpan.id = 'edit';
-        editSpan.textContent ='🖊'; // Set the text content of the edit span
+        editSpan.textContent ='✎'; // Set the text content of the edit span
 
         // Create the remove span
         let removeSpan = document.createElement('span');
