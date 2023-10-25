@@ -38,7 +38,7 @@ button.addEventListener('click',function addTask(){
     }
 
     inputBox.value="";
-    //saveData();
+    saveData();
 })
 
 listContainer.addEventListener('click',function(e){
@@ -47,7 +47,7 @@ listContainer.addEventListener('click',function(e){
     if(e.target.id==='remove'){//e target-->span
         grandparent.remove();//span parent-->li
     }
-    //saveData();
+    saveData();
 })
 
 
@@ -66,15 +66,15 @@ listContainer.addEventListener('click', function (e) {
         }
         li.firstChild.textContent = updatedText;
 
-       // saveData();
+        saveData();
     }
 });
 
 
-/*function saveData(){
+function saveData(){
     localStorage.setItem("data",listContainer.innerHTML)//store li data
 }
 function showData(){
     listContainer.innerHTML=localStorage.getItem("data");
-}*/
-//showData();
+}
+showData();
