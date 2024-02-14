@@ -156,7 +156,9 @@ height: inherit;
     width: 10px; /* Width of the scrollbar track */
     background-color: #ffffff63; /* Background color of the track */
 }
-
+#clear-button:hover{
+    background-color: rgb(255, 43, 43);
+}
 
 /* Style the scrollbar thumb/handle */
 #list-container::-webkit-scrollbar-thumb {

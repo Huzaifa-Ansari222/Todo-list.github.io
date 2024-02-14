@@ -1,6 +1,8 @@
 const inputBox=document.querySelector('#input-box')
 const listContainer=document.getElementById('list-container')
 const button=document.querySelector('button')
+const clearButton = document.querySelector('#clear-button');
+
 
 button.addEventListener('click',function addTask(){
     if(inputBox.value ===''){
@@ -69,7 +71,11 @@ listContainer.addEventListener('click', function (e) {
         saveData();
     }
 });
-
+// Add event listener to the Clear button
+clearButton.addEventListener('click', function clearData() {
+    localStorage.removeItem("data"); // Remove the 'data' item from local storage
+    listContainer.innerHTML = ''; // Clear the list container
+});
 
 function saveData(){
     localStorage.setItem("data",listContainer.innerHTML)//store li data
@@ -80,5 +86,3 @@ function showData(){
 //localStorage.clear();
 //listContainer.innerHTML = '';
 showData();
-
-//hi
